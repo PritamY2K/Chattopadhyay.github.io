@@ -1,28 +1,22 @@
 # Dr. Pritam Chattopadhyay — Academic Website
 
-Official academic and professional website of Dr. Pritam Chattopadhyay, featuring research, publications, bioinformatics tools, teaching, innovation, and biotechnology projects.
+Multi-page GitHub Pages website containing profile, research, projects, publications, innovation, teaching resources and contact information.
 
-## Live website
+## Public address
 
-**https://pritamy2k.github.io/Chattopadhyay.github.io/**
+`https://pritamy2k.github.io/Chattopadhyay.github.io/`
 
-## GitHub repository
+## Main pages
 
-**https://github.com/PritamY2K/Chattopadhyay.github.io**
+- `index.html` — Home
+- `about.html` — About
+- `research.html` — Research
+- `projects.html` — Digital projects
+- `publications.html` — Publications and books
+- `innovation.html` — Innovation
+- `teaching.html` — Semester-wise and paper-wise study materials
+- `contact.html` — Contact
 
-## Free hosting
+## Managing study materials
 
-This static website is designed for GitHub Pages. It uses HTML, CSS, and JavaScript and does not require a paid server or database.
-
-## Publish through GitHub
-
-1. Open the repository `PritamY2K/Chattopadhyay.github.io`.
-2. Select **Add file → Upload files**.
-3. Upload every file and folder from this package, including `index.html` and `assets`.
-4. Commit the files to the `main` branch.
-5. Open **Settings → Pages**.
-6. Under **Build and deployment**, select **Deploy from a branch**.
-7. Select **main** and **/(root)**, then save.
-8. Open the live website after GitHub completes deployment.
-
-See `DEPLOYMENT.md` for detailed instructions.
+Read `materials/README.md`. Course cards are controlled from `assets/courses.js`.

@@ -1,16 +1,9 @@
 {
-  "name": "Dr. Pritam Chattopadhyay",
+  "name": "Dr. Pritam Chattopadhyay | Academic Portfolio",
   "short_name": "PC Academic",
-  "start_url": "/Chattopadhyay.github.io/",
+  "start_url": "./",
   "display": "standalone",
-  "background_color": "#f5fbf9",
+  "background_color": "#f4f9f8",
   "theme_color": "#0b3d3a",
-  "icons": [
-    {
-      "src": "assets/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
-    }
-  ],
-  "scope": "/Chattopadhyay.github.io/"
+  "icons": [{"src":"assets/favicon.svg","sizes":"any","type":"image/svg+xml"}]
 }

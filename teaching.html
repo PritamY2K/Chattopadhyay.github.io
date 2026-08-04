@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b3d3a">
+  <meta name="description" content="Semester-wise, paper-wise study materials for botany, microbiology, molecular biology, bioinformatics and related courses.">
+  <meta name="author" content="Dr. Pritam Chattopadhyay">
+  <meta property="og:title" content="Teaching Materials | Dr. Pritam Chattopadhyay">
+  <meta property="og:description" content="Semester-wise, paper-wise study materials for botany, microbiology, molecular biology, bioinformatics and related courses.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pritamy2k.github.io/Chattopadhyay.github.io/teaching.html">
+  <meta property="og:image" content="https://pritamy2k.github.io/Chattopadhyay.github.io/assets/social-preview.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://pritamy2k.github.io/Chattopadhyay.github.io/teaching.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Teaching Materials | Dr. Pritam Chattopadhyay</title>
+  
+</head><body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">PC</span>
+        <span class="brand-text">Pritam Chattopadhyay</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="innovation.html">Innovation</a>
+        <a href="teaching.html" class="active" aria-current="page">Teaching</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch colour theme" title="Switch colour theme"><span aria-hidden="true">◐</span></button>
+    </div>
+  </header><main id="main-content"><section class="page-hero section">
+      <div class="hero-orb orb-one" aria-hidden="true"></div>
+      <div class="container page-hero-inner reveal">
+        <p class="eyebrow">Education</p>
+        <h1>Teaching and study materials</h1>
+        <p>Browse study materials by course name, course type, semester and paper.</p>
+      </div>
+    </section>
+<section class="section section-tinted teaching-catalogue-section">
+  <div class="container">
+    <div class="materials-intro reveal">
+      <div><p class="eyebrow">Course catalogue</p><h2>Course-wise, semester-wise and paper-wise resources</h2><p>Use the filters to locate papers by course, type and semester. Each paper can contain class notes, question banks, practical guides, presentations, syllabi and useful links.</p></div>
+      <a class="button button-secondary" href="materials/README.md">Material-management guide</a>
+    </div>
+    <div class="materials-controls reveal" aria-label="Study-material filters">
+      <label class="filter-field"><span>Course name</span><select id="course-name-filter"><option value="all">All courses</option></select></label>
+      <label class="filter-field"><span>Course type</span><select id="course-type-filter"><option value="all">All course types</option></select></label>
+      <label class="filter-field"><span>Semester</span><select id="semester-filter"><option value="all">All semesters</option></select></label>
+      <label class="filter-field search-field"><span>Search paper</span><input id="paper-search" type="search" placeholder="Paper name, code or topic"></label>
+      <button class="button button-secondary reset-filter" id="reset-filters" type="button">Reset</button>
+    </div>
+    <div class="materials-summary reveal"><p id="results-summary" aria-live="polite">Loading course catalogue…</p></div>
+    <div id="course-catalogue" class="course-catalogue" aria-live="polite"></div>
+    <div id="course-empty" class="empty-state" hidden><h3>No matching paper found</h3><p>Change the programme, semester or search term.</p></div>
+  </div>
+</section>
+<section class="section"><div class="container split-layout"><div class="section-heading reveal"><p class="eyebrow">Resource types</p><h2>One location for multiple learning formats</h2></div><div class="resource-type-grid reveal"><article><strong>PDF</strong><span>Class notes and handouts</span></article><article><strong>QB</strong><span>Question banks and tests</span></article><article><strong>PR</strong><span>Practical protocols</span></article><article><strong>PPT</strong><span>Lecture presentations</span></article><article><strong>SYL</strong><span>Syllabi and outcomes</span></article><article><strong>LINK</strong><span>External learning resources</span></article></div></div></section>
+<section class="section section-tinted"><div class="container note-panel reveal"><strong>How new papers are added</strong><p>Upload the study files into the <code>materials</code> folder and add one short entry to <code>assets/courses.js</code>. The filters and paper cards update automatically.</p></div></section></main>  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>Dr. Pritam Chattopadhyay</strong><p>Botany · Bioinformatics · Microbial Biotechnology</p></div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="teaching.html">Study materials</a>
+        <a href="mailto:pritam.biotechnol@gmail.com">Email</a>
+        <a href="https://github.com/PritamY2K" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      <p class="copyright">© <span id="current-year"></span> Dr. Pritam Chattopadhyay</p>
+    </div>
+  </footer>
+  <noscript><p class="noscript">JavaScript is needed for filters and enhanced navigation.</p></noscript>
+  <script src="assets/script.js" defer></script>
+  <script src="assets/courses.js" defer></script><script src="assets/teaching.js" defer></script>
+</body>
+</html>
