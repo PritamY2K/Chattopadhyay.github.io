@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061f24"/><stop offset="1" stop-color="#0b5352"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2dd4bf"/><stop offset="1" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity=".15" fill="#fff"><circle cx="1020" cy="120" r="240"/><circle cx="120" cy="610" r="260"/></g>
+  <g transform="translate(805 70)" fill="none" stroke="url(#line)" stroke-width="10" stroke-linecap="round">
+    <path d="M30 30 C340 120 50 330 350 490"/><path d="M350 30 C40 120 330 330 30 490"/>
+  </g>
+  <text x="80" y="235" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#eafffb">Dr. Pritam</text>
+  <text x="80" y="323" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#62ded0">Chattopadhyay</text>
+  <text x="84" y="390" font-family="Arial, sans-serif" font-size="25" font-weight="600" fill="#b7d8d4">Botany · Bioinformatics · Microbial Biotechnology</text>
+  <text x="84" y="500" font-family="Arial, sans-serif" font-size="22" fill="#d8eeeb">Research · Education · Innovation</text>
+</svg>

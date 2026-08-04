@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pritamy2k.github.io/Chattopadhyay.github.io/sitemap.xml
