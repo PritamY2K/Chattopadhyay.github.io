@@ -1,19 +1,12 @@
-# CV-derived website update
+# Content maintenance note
 
-The following pages were expanded using information from the uploaded curriculum vitae dated 22 June 2026:
+The academic information used across the website was compiled from the supplied professional profile.
 
-- About
-- Research
-- Projects
-- Publications
-- Innovation
-- Teaching
+Public-facing pages avoid source-document language and present the information directly in a professional portfolio format.
 
-The existing homepage portrait remains in:
+The homepage portrait is stored at:
 
 - `assets/dr-pritam-chattopadhyay.webp`
 - `assets/dr-pritam-chattopadhyay.jpg`
 
-The Projects page retains the previously added digital initiatives and identifies them separately from the CV-derived funded and academic projects.
-
-Publication and citation indicators are reproduced as reported in the CV and may change over time.
+The portrait is displayed at its natural aspect ratio without cropping or stretching.

@@ -100,7 +100,7 @@ button, input, textarea { font: inherit; }
 .hero-orb { position: absolute; border-radius: 50%; filter: blur(3px); pointer-events: none; z-index: -1; }
 .orb-one { width: 340px; height: 340px; right: -140px; top: 90px; background: radial-gradient(circle, rgba(45, 212, 191, 0.22), transparent 67%); }
 .orb-two { width: 280px; height: 280px; left: -100px; bottom: 10px; background: radial-gradient(circle, rgba(96, 165, 250, 0.16), transparent 67%); }
-.portrait-card { position: relative; background: linear-gradient(145deg, #08272b, #0a3940); border: 1px solid rgba(177, 255, 245, 0.2); border-radius: 40px; padding: 18px; box-shadow: 0 34px 90px rgba(6, 42, 44, 0.28); transform: rotate(2deg); }
+.portrait-card { position: relative; background: linear-gradient(145deg, #08272b, #0a3940); border: 1px solid rgba(177, 255, 245, 0.2); border-radius: 40px; padding: 18px; box-shadow: 0 34px 90px rgba(6, 42, 44, 0.28); transform: none; }
 .portrait-card::after { content: ""; position: absolute; inset: 11px; border: 1px solid rgba(201, 255, 247, 0.1); border-radius: 32px; pointer-events: none; }
 .portrait-topline { display: flex; gap: 6px; padding: 8px 9px; }
 .portrait-topline span { width: 7px; height: 7px; border-radius: 50%; background: #8ce9dc; opacity: 0.5; }
@@ -311,9 +311,10 @@ button, input, textarea { font: inherit; }
 .profile-portrait {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: center center;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center;
   border-radius: 27px;
   filter: saturate(0.98) contrast(1.01);
 }
@@ -473,4 +474,12 @@ button, input, textarea { font: inherit; }
   .publication-item > a {
     grid-column: 2;
   }
+}
+
+/* Preserve the selected portrait's natural proportions */
+
+.profile-photo-card picture {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
 }
