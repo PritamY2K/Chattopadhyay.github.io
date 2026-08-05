@@ -40,3 +40,13 @@ Suggested commit message:
 The public website address is:
 
 `https://pritamy2k.github.io/Chattopadhyay.github.io/`
+
+
+## Homepage portrait
+
+The homepage uses the optimized portrait files:
+
+- `assets/dr-pritam-chattopadhyay.webp`
+- `assets/dr-pritam-chattopadhyay.jpg`
+
+Both files should remain in the `assets` folder.
