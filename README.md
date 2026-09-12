@@ -1,6 +1,6 @@
 # Dr. Pritam Chattopadhyay — Academic Website
 
-Multi-page GitHub Pages website containing profile, research, projects, publications, innovation, teaching resources and contact information.
+Website containing profile, research, projects, publications, innovation, teaching resources and contact information.
 
 ## Public address
 
