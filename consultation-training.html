@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Research consultation, bioinformatics, genomics, scientific manuscript consultation, individual mentoring and training programmes by Dr. Pritam Chattopadhyay.">
+
+  <meta name="keywords"
+        content="Bioinformatics, Genomics, Research Consultation, Microbial Genomics, Phylogenetics, Structural Bioinformatics, Scientific Writing, Research Methodology, Training">
+
+  <meta name="author" content="Dr. Pritam Chattopadhyay">
+
+  <title>Research Consultation & Training | Dr. Pritam Chattopadhyay</title>
+
+  <style>
+
+    /* =========================================================
+       BASIC RESET
+       ========================================================= */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: #25313b;
+      background: #f7f9fb;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+
+    /* =========================================================
+       HEADER
+       ========================================================= */
+
+    header {
+      background: #123c52;
+      color: white;
+      padding: 24px 20px;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .site-name {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .site-description {
+      font-size: 15px;
+      color: #dce8ee;
+    }
+
+
+    /* =========================================================
+       NAVIGATION
+       ========================================================= */
+
+    nav {
+      background: #0d2f41;
+      border-top: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      padding: 15px 13px;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #17627d;
+    }
+
+    nav a.active {
+      background: #17627d;
+      font-weight: 700;
+    }
+
+
+    /* =========================================================
+       HERO SECTION
+       ========================================================= */
+
+    .hero {
+      background:
+        linear-gradient(
+          135deg,
+          rgba(18,60,82,0.97),
+          rgba(31,105,126,0.93)
+        );
+
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero-container {
+      max-width: 950px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .hero .subtitle {
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      color: #f0f8fb;
+    }
+
+    .hero .keywords {
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      margin-bottom: 30px;
+      color: #d4e9f0;
+    }
+
+
+    /* =========================================================
+       BUTTONS
+       ========================================================= */
+
+    .btn {
+      display: inline-block;
+      background: #ffffff;
+      color: #123c52;
+      padding: 13px 23px;
+      margin: 6px;
+      border-radius: 5px;
+      font-weight: 700;
+      border: 2px solid white;
+      transition: 0.25s;
+    }
+
+    .btn:hover {
+      background: transparent;
+      color: white;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background: white;
+      color: #123c52;
+    }
+
+    .btn-dark {
+      background: #17627d;
+      color: white;
+      border: 2px solid #17627d;
+    }
+
+    .btn-dark:hover {
+      background: #123c52;
+      border-color: #123c52;
+      color: white;
+    }
+
+
+    /* =========================================================
+       MAIN CONTENT
+       ========================================================= */
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 55px 20px 70px;
+    }
+
+    section {
+      margin-bottom: 65px;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+      color: #123c52;
+      font-size: 31px;
+      margin-bottom: 10px;
+    }
+
+    .section-heading p {
+      max-width: 760px;
+      margin: auto;
+      color: #596872;
+      font-size: 16px;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: 17px;
+      color: #45545e;
+    }
+
+    .intro p {
+      margin-bottom: 18px;
+    }
+
+
+    /* =========================================================
+       SERVICES
+       ========================================================= */
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 8px;
+      padding: 30px;
+      border-top: 5px solid #17627d;
+      box-shadow: 0 4px 17px rgba(0,0,0,0.08);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.11);
+    }
+
+    .service-number {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #17627d;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .service-card h3 {
+      color: #123c52;
+      font-size: 21px;
+      line-height: 1.35;
+      margin-bottom: 15px;
+    }
+
+    .service-card p {
+      margin-bottom: 15px;
+      color: #53616b;
+    }
+
+    .service-card ul {
+      padding-left: 20px;
+      color: #53616b;
+    }
+
+    .service-card li {
+      margin-bottom: 8px;
+    }
+
+
+    /* =========================================================
+       EXPERTISE
+       ========================================================= */
+
+    .expertise {
+      background: #edf4f7;
+      padding: 50px 35px;
+      border-radius: 10px;
+    }
+
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .expertise-card {
+      background: white;
+      padding: 25px;
+      border-radius: 7px;
+      border-left: 4px solid #17627d;
+    }
+
+    .expertise-card h3 {
+      color: #123c52;
+      margin-bottom: 10px;
+      font-size: 19px;
+    }
+
+    .expertise-card p {
+      color: #53616b;
+    }
+
+
+    /* =========================================================
+       WORKSHOP
+       ========================================================= */
+
+    .workshop-box {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    .workshop-header {
+      background: #123c52;
+      color: white;
+      padding: 28px 35px;
+    }
+
+    .workshop-label {
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #cfe5ed;
+      margin-bottom: 8px;
+    }
+
+    .workshop-header h3 {
+      font-size: 27px;
+      margin-bottom: 5px;
+    }
+
+    .workshop-content {
+      padding: 35px;
+    }
+
+    .workshop-content p {
+      margin-bottom: 18px;
+    }
+
+    .workshop-content ul {
+      padding-left: 23px;
+      margin-bottom: 25px;
+    }
+
+    .workshop-content li {
+      margin-bottom: 8px;
+    }
+
+    .workshop-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin: 25px 0;
+    }
+
+    .info-box {
+      background: #f1f6f8;
+      padding: 17px;
+      text-align: center;
+      border-radius: 6px;
+    }
+
+    .info-box strong {
+      display: block;
+      color: #123c52;
+      margin-bottom: 5px;
+    }
+
+
+    /* =========================================================
+       WHO CAN BENEFIT
+       ========================================================= */
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .audience-card {
+      background: white;
+      padding: 24px 18px;
+      text-align: center;
+      border-radius: 7px;
+      border: 1px solid #dae4e8;
+    }
+
+    .audience-card h3 {
+      color: #123c52;
+      font-size: 18px;
+      margin-bottom: 7px;
+    }
+
+    .audience-card p {
+      font-size: 14px;
+      color: #5d6971;
+    }
+
+
+    /* =========================================================
+       PROFESSIONAL ETHICS
+       ========================================================= */
+
+    .ethics-box {
+      background: #fff;
+      padding: 35px;
+      border-left: 5px solid #17627d;
+      border-radius: 6px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+    }
+
+    .ethics-box p {
+      margin-bottom: 15px;
+    }
+
+    .ethics-box ul {
+      padding-left: 23px;
+    }
+
+    .ethics-box li {
+      margin-bottom: 8px;
+    }
+
+
+    /* =========================================================
+       CONSULTATION PROCESS
+       ========================================================= */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .process-card {
+      text-align: center;
+      background: white;
+      padding: 28px 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 14px rgba(0,0,0,0.06);
+    }
+
+    .process-circle {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: #17627d;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .process-card h3 {
+      color: #123c52;
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .process-card p {
+      font-size: 14px;
+      color: #5e6c75;
+    }
+
+
+    /* =========================================================
+       CONTACT / CALL TO ACTION
+       ========================================================= */
+
+    .cta {
+      background: #123c52;
+      color: white;
+      border-radius: 10px;
+      padding: 55px 30px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 31px;
+      margin-bottom: 13px;
+    }
+
+    .cta p {
+      max-width: 800px;
+      margin: 0 auto 25px;
+      color: #dfedf2;
+      font-size: 16px;
+    }
+
+
+    /* =========================================================
+       DISCLAIMER
+       ========================================================= */
+
+    .disclaimer {
+      max-width: 950px;
+      margin: 30px auto 0;
+      font-size: 13px;
+      color: #6a767e;
+      text-align: center;
+    }
+
+
+    /* =========================================================
+       FOOTER
+       ========================================================= */
+
+    footer {
+      background: #0d2f41;
+      color: #dce9ee;
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #ffffff;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+
+    /* =========================================================
+       RESPONSIVE DESIGN
+       ========================================================= */
+
+    @media (max-width: 950px) {
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .expertise-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .audience-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .workshop-info {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+    }
+
+
+    @media (max-width: 600px) {
+
+      .site-name {
+        font-size: 23px;
+      }
+
+      .hero {
+        padding: 60px 18px;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .hero .subtitle {
+        font-size: 17px;
+      }
+
+      .section-heading h2 {
+        font-size: 26px;
+      }
+
+      .audience-grid,
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        padding: 11px 9px;
+        font-size: 13px;
+      }
+
+      main {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .expertise,
+      .workshop-content {
+        padding: 25px 20px;
+      }
+
+      .workshop-header {
+        padding: 25px 20px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+
+<header>
+
+  <div class="header-container">
+
+    <div class="site-name">
+      Dr. Pritam Chattopadhyay
+    </div>
+
+    <div class="site-description">
+      Academic • Researcher • Teacher • Bioinformatics & Life Sciences
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- =========================================================
+     NAVIGATION
+     ========================================================= -->
+
+<nav>
+
+  <div class="nav-container">
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="research.html">Research</a>
+
+    <a href="projects.html">Projects</a>
+
+    <a href="publications.html">Publications</a>
+
+    <a href="innovation.html">Innovation</a>
+
+    <a href="teaching.html">Teaching Materials</a>
+
+    <a href="consultation-training.html" class="active">
+      Consultation & Training
+    </a>
+
+    <a href="contact.html">Contact</a>
+
+  </div>
+
+</nav>
+
+
+<!-- =========================================================
+     HERO SECTION
+     ========================================================= -->
+
+<section class="hero">
+
+  <div class="hero-container">
+
+    <h1>
+      Research Consultation & Training
+    </h1>
+
+    <p class="subtitle">
+      Research-oriented guidance and professional training for
+      postgraduate researchers, Ph.D. scholars, faculty members
+      and life-science investigators.
+    </p>
+
+    <p class="keywords">
+      Bioinformatics • Genomics • Microbial Genomics • Molecular
+      Phylogenetics • Structural Bioinformatics • Research Methodology
+    </p>
+
+    <a href="#services" class="btn">
+      Explore Services
+    </a>
+
+    <a href="#contact" class="btn btn-secondary">
+      Request a Consultation
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     MAIN CONTENT
+     ========================================================= -->
+
+<main>
+
+
+  <!-- INTRODUCTION -->
+
+  <section>
+
+    <div class="section-heading">
+
+      <h2>
+        Professional Research Support
+      </h2>
+
+      <p>
+        Scientific consultation focused on sound methodology,
+        appropriate analytical strategies and meaningful biological
+        interpretation.
+      </p>
+
+    </div>
+
+
+    <div class="intro">
+
+      <p>
+        I offer a limited number of professional research consultations,
+        individual mentoring sessions and training programmes for
+        researchers working in biological and life-science disciplines.
+      </p>
+
+      <p>
+        The primary objective is to help researchers develop scientifically
+        appropriate and reproducible approaches to biological data analysis,
+        bioinformatics workflow development, research methodology and
+        scientific communication.
+      </p>
+
+      <p>
+        Consultation is tailored to the specific research question rather
+        than based solely on the application of individual software tools.
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       SERVICES
+       ===================================================== -->
+
+  <section id="services">
+
+    <div class="section-heading">
+
+      <h2>
+        Consultation & Mentoring Services
+      </h2>
+
+      <p>
+        Services are designed for legitimate academic and scientific
+        research and are tailored according to the scope and complexity
+        of individual projects.
+      </p>
+
+    </div>
+
+
+    <div class="services-grid">
+
+
+      <!-- SERVICE 1 -->
+
+      <div class="service-card">
+
+        <div class="service-number">
+          Service 01
+        </div>
+
+        <h3>
+          Bioinformatics & Genomics Research Consultation
+        </h3>
+
+        <p>
+          Research-focused consultation for investigators requiring
+          assistance with the design and interpretation of computational
+          biological studies.
+        </p>
+
+        <ul>
+
+          <li>
+            Research question and bioinformatics strategy
+          </li>
+
+          <li>
+            Biological database and resource selection
+          </li>
+
+          <li>
+            Analytical workflow development
+          </li>
+
+          <li>
+            Sequence analysis and comparative genomics
+          </li>
+
+          <li>
+            Microbial genomics and genome-mining strategies
+          </li>
+
+          <li>
+            Quality-control and validation approaches
+          </li>
+
+          <li>
+            Biological interpretation of computational results
+          </li>
+
+          <li>
+            Troubleshooting of research workflows
+          </li>
+
+        </ul>
+
+      </div>
+
+
+
+      <!-- SERVICE 2 -->
+
+      <div class="service-card">
+
+        <div class="service-number">
+          Service 02
+        </div>
+
+        <h3>
+          Scientific Manuscript & Research Methodology Consultation
+        </h3>
+
+        <p>
+          Independent scientific assessment of manuscripts and research
+          projects with emphasis on methodological and interpretative
+          quality.
+        </p>
+
+        <ul>
+
+          <li>
+            Research design assessment
+          </li>
+
+          <li>
+            Methodological review
+          </li>
+
+          <li>
+            Results–Methods consistency
+          </li>
+
+          <li>
+            Interpretation of biological findings
+          </li>
+
+          <li>
+            Figures and tables assessment
+          </li>
+
+          <li>
+            Reviewer-response strategy
+          </li>
+
+          <li>
+            Manuscript organisation and scientific clarity
+          </li>
+
+          <li>
+            Journal-readiness assessment
+          </li>
+
+        </ul>
+
+      </div>
+
+
+
+      <!-- SERVICE 3 -->
+
+      <div class="service-card">
+
+        <div class="service-number">
+          Service 03
+        </div>
+
+        <h3>
+          Individual Research Mentoring
+        </h3>
+
+        <p>
+          One-to-one online mentoring for researchers who wish to
+          develop practical competency in selected bioinformatics
+          and genomics approaches.
+        </p>
+
+        <ul>
+
+          <li>
+            Biological databases and sequence retrieval
+          </li>
+
+          <li>
+            BLAST and similarity searches
+          </li>
+
+          <li>
+            Multiple sequence alignment
+          </li>
+
+          <li>
+            Molecular phylogenetics
+          </li>
+
+          <li>
+            Comparative genomics
+          </li>
+
+          <li>
+            Microbial genomics
+          </li>
+
+          <li>
+            Structural bioinformatics
+          </li>
+
+          <li>
+            Research workflow planning
+          </li>
+
+        </ul>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       EXPERTISE
+       ===================================================== -->
+
+  <section class="expertise">
+
+    <div class="section-heading">
+
+      <h2>
+        Areas of Consultation
+      </h2>
+
+      <p>
+        Selected areas in which research-oriented consultation
+        and methodological guidance may be provided.
+      </p>
+
+    </div>
+
+
+    <div class="expertise-grid">
+
+
+      <div class="expertise-card">
+
+        <h3>
+          Genomics & Bioinformatics
+        </h3>
+
+        <p>
+          Genome analysis, comparative genomics, sequence analysis,
+          biological database utilisation, annotation strategies and
+          computational workflow development.
+        </p>
+
+      </div>
+
+
+
+      <div class="expertise-card">
+
+        <h3>
+          Microbial Bioinformatics
+        </h3>
+
+        <p>
+          Microbial genomics, comparative microbial analysis,
+          genome mining, secondary-metabolite research and
+          host–microbe interaction studies.
+        </p>
+
+      </div>
+
+
+
+      <div class="expertise-card">
+
+        <h3>
+          Molecular Phylogenetics
+        </h3>
+
+        <p>
+          Sequence selection, multiple sequence alignment,
+          evolutionary model selection, phylogenetic reconstruction,
+          validation and biological interpretation.
+        </p>
+
+      </div>
+
+
+
+      <div class="expertise-card">
+
+        <h3>
+          Structural Bioinformatics
+        </h3>
+
+        <p>
+          Protein sequence–structure analysis, structure prediction,
+          molecular visualisation and structure-based biological
+          interpretation.
+        </p>
+
+      </div>
+
+
+
+      <div class="expertise-card">
+
+        <h3>
+          Research Methodology
+        </h3>
+
+        <p>
+          Research-question formulation, study design, analytical
+          planning, reproducibility, interpretation and presentation
+          of biological research.
+        </p>
+
+      </div>
+
+
+
+      <div class="expertise-card">
+
+        <h3>
+          Biological Database Development
+        </h3>
+
+        <p>
+          Conceptual planning of biological databases, data
+          organisation, annotation frameworks, searchable biological
+          resources and computational research infrastructure.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       WORKSHOP
+       ===================================================== -->
+
+  <section id="training">
+
+    <div class="section-heading">
+
+      <h2>
+        Workshops & Training Programmes
+      </h2>
+
+      <p>
+        Practical training programmes are designed to connect
+        bioinformatics concepts with real biological research problems.
+      </p>
+
+    </div>
+
+
+    <div class="workshop-box">
+
+
+      <div class="workshop-header">
+
+        <div class="workshop-label">
+          Upcoming Training Programme
+        </div>
+
+        <h3>
+          Applied Bioinformatics for Life-Science Researchers
+        </h3>
+
+      </div>
+
+
+      <div class="workshop-content">
+
+        <p>
+          A practical introductory programme designed for postgraduate
+          students, research scholars, early-career researchers and
+          faculty members who wish to develop a systematic understanding
+          of commonly used bioinformatics approaches.
+        </p>
+
+
+        <h3>
+          Topics will include:
+        </h3>
+
+        <ul>
+
+          <li>
+            Biological databases and efficient sequence retrieval
+          </li>
+
+          <li>
+            NCBI and UniProt resources
+          </li>
+
+          <li>
+            BLAST and sequence similarity analysis
+          </li>
+
+          <li>
+            Multiple sequence alignment
+          </li>
+
+          <li>
+            Fundamentals of molecular phylogenetics
+          </li>
+
+          <li>
+            Protein sequence and structure resources
+          </li>
+
+          <li>
+            Integration of individual tools into a research workflow
+          </li>
+
+        </ul>
+
+
+        <div class="workshop-info">
+
+
+          <div class="info-box">
+
+            <strong>
+              Format
+            </strong>
+
+            Live Online
+
+          </div>
+
+
+          <div class="info-box">
+
+            <strong>
+              Level
+            </strong>
+
+            Beginner–Intermediate
+
+          </div>
+
+
+          <div class="info-box">
+
+            <strong>
+              Audience
+            </strong>
+
+            Life-Science Researchers
+
+          </div>
+
+
+        </div>
+
+
+        <p>
+          <strong>
+            Registration:
+          </strong>
+          Details of the next programme will be announced shortly.
+        </p>
+
+
+        <a href="contact.html" class="btn btn-dark">
+          Express Interest
+        </a>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       TARGET AUDIENCE
+       ===================================================== -->
+
+  <section>
+
+    <div class="section-heading">
+
+      <h2>
+        Who May Benefit?
+      </h2>
+
+      <p>
+        Consultation and training programmes are primarily intended
+        for individuals engaged in legitimate academic and scientific
+        research.
+      </p>
+
+    </div>
+
+
+    <div class="audience-grid">
+
+
+      <div class="audience-card">
+
+        <h3>
+          Postgraduate Researchers
+        </h3>
+
+        <p>
+          Researchers beginning to incorporate computational
+          approaches into biological studies.
+        </p>
+
+      </div>
+
+
+      <div class="audience-card">
+
+        <h3>
+          Ph.D. Scholars
+        </h3>
+
+        <p>
+          Researchers requiring methodological guidance for
+          bioinformatics-based research questions.
+        </p>
+
+      </div>
+
+
+      <div class="audience-card">
+
+        <h3>
+          Faculty Members
+        </h3>
+
+        <p>
+          Academics planning collaborative, interdisciplinary
+          or computational biological research.
+        </p>
+
+      </div>
+
+
+      <div class="audience-card">
+
+        <h3>
+          Early-Career Scientists
+        </h3>
+
+        <p>
+          Researchers seeking to expand their practical competency
+          in modern bioinformatics and genomics.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       CONSULTATION PROCESS
+       ===================================================== -->
+
+  <section>
+
+    <div class="section-heading">
+
+      <h2>
+        How Consultation Works
+      </h2>
+
+      <p>
+        A simple and transparent process is followed before
+        commencement of professional consultation.
+      </p>
+
+    </div>
+
+
+    <div class="process-grid">
+
+
+      <div class="process-card">
+
+        <div class="process-circle">
+          1
+        </div>
+
+        <h3>
+          Submit an Enquiry
+        </h3>
+
+        <p>
+          Briefly describe your research question, requirements
+          and expected outcome.
+        </p>
+
+      </div>
+
+
+      <div class="process-card">
+
+        <div class="process-circle">
+          2
+        </div>
+
+        <h3>
+          Scope Assessment
+        </h3>
+
+        <p>
+          The scientific scope, feasibility and type of consultation
+          required are evaluated.
+        </p>
+
+      </div>
+
+
+      <div class="process-card">
+
+        <div class="process-circle">
+          3
+        </div>
+
+        <h3>
+          Agreement
+        </h3>
+
+        <p>
+          Deliverables, consultation format, professional fee
+          and expected schedule are agreed in advance.
+        </p>
+
+      </div>
+
+
+      <div class="process-card">
+
+        <div class="process-circle">
+          4
+        </div>
+
+        <h3>
+          Consultation
+        </h3>
+
+        <p>
+          Research-oriented consultation, mentoring or training
+          is then undertaken according to the agreed scope.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       PROFESSIONAL ETHICS
+       ===================================================== -->
+
+  <section>
+
+    <div class="section-heading">
+
+      <h2>
+        Professional & Ethical Framework
+      </h2>
+
+      <p>
+        Consultation is intended to support responsible scientific
+        research and researcher development.
+      </p>
+
+    </div>
+
+
+    <div class="ethics-box">
+
+      <p>
+        Scientific consultation focuses on methodological guidance,
+        critical assessment, interpretation and researcher training.
+        Academic integrity and appropriate attribution of intellectual
+        contributions are expected in all engagements.
+      </p>
+
+      <ul>
+
+        <li>
+          No fabrication, falsification or manipulation of research data.
+        </li>
+
+        <li>
+          No preparation of academic assignments or examinations
+          on behalf of students.
+        </li>
+
+        <li>
+          No thesis or dissertation ghostwriting.
+        </li>
+
+        <li>
+          No paid or honorary authorship in exchange for consultation.
+        </li>
+
+        <li>
+          No guarantee of manuscript publication, journal acceptance
+          or predetermined research results.
+        </li>
+
+        <li>
+          Appropriate confidentiality will be maintained for legitimate
+          unpublished research information shared for consultation.
+        </li>
+
+      </ul>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       CONTACT / CTA
+       ===================================================== -->
+
+  <section id="contact">
+
+    <div class="cta">
+
+      <h2>
+        Discuss Your Research Requirement
+      </h2>
+
+      <p>
+        Researchers interested in consultation, individual mentoring
+        or upcoming training programmes may provide a brief description
+        of their research area, specific requirement and expected outcome.
+        Professional fees are determined according to the scope,
+        complexity and time requirements of each engagement.
+      </p>
+
+      <a href="contact.html" class="btn">
+        Send a Consultation Enquiry
+      </a>
+
+    </div>
+
+
+    <div class="disclaimer">
+
+      <p>
+        Research consultation and training services described on this
+        page are professional academic activities and do not constitute
+        a guarantee of publication, research outcome, degree completion
+        or institutional accreditation. Services are undertaken subject
+        to professional, ethical and applicable institutional requirements.
+      </p>
+
+    </div>
+
+  </section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer>
+
+  <p>
+    © 2026 Dr. Pritam Chattopadhyay. All rights reserved.
+  </p>
+
+  <p>
+    Academic • Research • Teaching • Bioinformatics • Life Sciences
+  </p>
+
+  <p>
+    <a href="contact.html">
+      Contact
+    </a>
+  </p>
+
+</footer>
+
+
+</body>
+</html>
