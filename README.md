@@ -1,22 +1,43 @@
-# Dr. Pritam Chattopadhyay — Academic Website
+# Teaching Materials Management Guide
 
-Website containing profile, research, projects, publications, innovation, teaching resources and contact information.
+The teaching catalogue is controlled by `assets/courses.js`.
 
-## Public address
+Each catalogue entry contains:
 
-`https://pritamy2k.github.io/Chattopadhyay.github.io/`
+- Course name
+- Course type
+- Semester
+- Paper code
+- Paper name
+- Short description and topic tags
+- Links to class notes, question banks, syllabi and lecture presentations
 
-## Main pages
+## Suggested folder structure
 
-- `index.html` — Home
-- `about.html` — About
-- `research.html` — Research
-- `projects.html` — Digital projects
-- `publications.html` — Publications and books
-- `innovation.html` — Innovation
-- `teaching.html` — Semester-wise and paper-wise study materials
-- `contact.html` — Contact
+```text
+materials/
+└── bsc-botany/
+    ├── semester-i/
+    │   ├── botn-1011-1021/
+    │   └── botn-1051/
+    ├── semester-ii/
+    ├── semester-iii/
+    ├── semester-iv/
+    ├── semester-v/
+    ├── semester-vi/
+    ├── semester-vii/
+    └── semester-viii/
+```
 
-## Managing study materials
+After uploading a study file, add its relative path to the relevant `href` field in `assets/courses.js` and change its status from `coming-soon` to `available`.
 
-Read `materials/README.md`. Course cards are controlled from `assets/courses.js`.
+Example:
+
+```javascript
+{
+  label: "Class notes",
+  type: "PDF",
+  href: "materials/bsc-botany/semester-iv/botn-4011/class-notes.pdf",
+  status: "available"
+}
+```
